@@ -14,7 +14,7 @@ def start_spotify_session(config):
     """
     credentials_manager = spotipy.SpotifyOAuth(
         username=config["username"],
-        scope="playlist-read-private",
+        scope="playlist-modify-private",
         client_id=config["client_id"],
         client_secret=config["client_secret"],
         redirect_uri=config["redirect_uri"],
